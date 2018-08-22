@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {{!-- jQuery Link --}}
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        {{!-- Bootstrap Links --}}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        {{!-- CSS Style Sheet --}}
+        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+
+        <title>Pitchside News!</title>
+    </head>
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Footy News</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/favorited">Favorited Articles</a></li>
+                    <li><button type="button" class="btn btn-primary" id="scrape">Scrape Articles</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {{{ body }}}
+
+        {{!--External JS Link--}}
+        <script src="/assets/js/app.js"></script>
+    </body>
+</html>
